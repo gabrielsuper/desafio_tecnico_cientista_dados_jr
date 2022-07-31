@@ -13,16 +13,18 @@ Esse é um case técnico para a vaga de Cientista de Dados Jr, foi solicitado al
 ## 1 - Análise exploratória dos dados
 
 ```
-Os dados que usaremos neste projeto foram disponibilizados no Google Drive pela recrutadora. O dataset representa valores númericos que variam entre int e float contendo 466 linhas.
+Os dados que usaremos neste projeto foram disponibilizados no Google Drive pela recrutadora. 
+O dataset representa valores númericos que variam entre int e float contendo 466 linhas.
 Este é um conjunto de dados balanceado, mais a frente iremos verificar a distribuição de classe.
-Outro detalhe interessante é que as features são todas numéricas, e foram descaracterizadas (por questões ligados à privacidade e segurança). Assim, os nomes das colunas são representados por feature0,feature1,feature2…,target.
+Outro detalhe interessante é que as features são todas numéricas, e foram descaracterizadas (por questões ligados à privacidade e segurança). 
+Assim, os nomes das colunas são representados por feature0,feature1,feature2…,target.
 Não é possível saber se as variáveis passaram por uma transformação conhecida como Análise de Componentes Principais (Principal Component Analysis - PCA).
 ```
 
 A variável alvo está representada na coluna target, onde:
 
-0: Não ocorreu o evento
-1: Ocorreu o evento
+* 0: Não ocorreu o evento
+* 1: Ocorreu o evento
 
 ### Utilizando alguns comandos python para análise de dados:
 
