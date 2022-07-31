@@ -14,7 +14,7 @@ Necessário uso do Docker
   docker-compose up
 ```
 
-Acesse o [LINK](http://127.0.0.1:8888/lab?token=easy) .
+Acesse o [LINK](http://127.0.0.1:8888/lab?token=easy) para acesso a interface do Jupyter Notebook .
 
 
 ## Para execução do modelo
