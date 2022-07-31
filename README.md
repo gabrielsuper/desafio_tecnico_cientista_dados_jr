@@ -1,6 +1,6 @@
 # DESAFIO TECNICO CIENTISTA DE DADOS JR
 
-Esse é um case técnico para a vaga de Cientista de Dados Jr, foi solicitado algumas etapas para o projeto. No arquivo do Jupyter Notebook tem o processo passo a passo explicado, desde a obtenção dos dados até a conclusão dos resultados dos modelos de machine learning. Aqui irei passar alguns overviews de todo os processos solicitados.
+Esse é um case técnico para a vaga de Cientista de Dados Jr, foi solicitado algumas etapas para o projeto. No arquivo do Jupyter Notebook tem o processo passo a passo explicado e com muitas informações, desde a obtenção dos dados até a conclusão dos resultados dos modelos de machine learning. Aqui irei passar **alguns overviews** de todo os processos solicitados.
 
 1 - Análise exploratória dos dados
 2 - Preparação dos dados
@@ -63,7 +63,10 @@ Após o treino dos modelos ambos passaram pelo hiper parâmetros utilizando o Gr
 
 ## 4 - Avaliação da performance do modelo
 
+Utilizando a matriz de confusão foi possível obter alguns valores para quantificar os modelos. Algumas métricas como precisão, recall, f1-score e acurácia.
+Outra métrica utilizada foi o AUC, para cálcular a qualidade das especificações do modelo.
 
+Ao testar os modelos obtivemos uma acurácia de **0.6571** e AUC ROC de **0.6594** para o XGBoost, acurácia de **0.6071** para a Regressão Logística e AUC ROC de **0.6142** antes da tratativa dos outlier. Após a remoção dos outliers obtivemos uma acurácia de **0.6549** para o XGBoost e AUC ROC de **0.6307**, acurácia de **0.5752** para a Regressão Logística e AUC ROC de **0.5365**.
 
 ## 5 - Execução do Projeto - Entrega
 
