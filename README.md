@@ -32,21 +32,38 @@ A variável alvo está representada na coluna target, onde:
 * Variáveis númericas: Todas as features e a target.
 * O dataset não possui dados nulos em qualquer váriavel,não precisando realizarmos tratativas de inclusão ou remoção para dados faltantes.
 
-- Utilizando a matriz de correlação encontramos algumas features que se relacionam muito bem e outras que são mais fracas.
+#### Utilizando a matriz de correlação encontramos algumas features que se relacionam muito bem e outras que são mais fracas.
 
 * A Feature 4 e a feature 15 tem correlação de -0.87, significa que podemos remover uma delas do dataset de treino. No caso, vamos remover a feature15 porque ela tem menor relação com o target (-0.09), enquanto a feature4 tem 0.11.
 
-- Utilizando o gráfico de dispersão encontramos algumas features que se relacionam muito bem e outras que se destoam.
+#### Utilizando o gráfico de dispersão encontramos algumas features que se relacionam muito bem e outras que se destoam.
 
 * A feature15 tem praticamente a mesma distribuição para as duas classes, isso significa que ela sozinha não caracteriza tão bem as classes.
 
 * Por outro lado, a feature1 tem distribuições bem diferentes para cada classe. Isso significa que ela tem um poder preditivo maior por segmentar melhor as classes.
 
-- Analisando outliers com boxplot
+#### Analisando outliers com boxplot
 
 * Todas as features tem outliers, como ação vamos retirar esses outliers do dataset e ver como o modelo vai se comportar sem estes outliers no processo de treino.
 
 ## 2 - Preparação dos dados
+
+Na segunda etapa foi realizado a preparação dos dados para o processo de modelagem. Os seguintes passos foram realizados.
+
+* Padronizar as feature int para float que está em outro tipo de dados;
+* Remover os outliers atráves do cálculo do IQR;
+* Dividir entre dados de treino e teste utilizando o train_test_split da biblioteca scikit-learn, foi utilizado dois parâmetros nessa etapa 
+   * Onde dividimos em 30% do dataset para os dados de teste;
+   * O random_state igual a 1, pois se não especificar o random_state no código, toda vez que você executar (executar) seu código, um novo valor aleatório será gerado e os conjuntos de dados de treinamento e teste terão valores diferentes a cada vez.
+
+## 3 - Modelagem
+
+Na etapa de modelagem foi utilizado os algoritmos XGBoost Classifier e Regressão Logística, a escolha dos algoritmos se deu por ser um problema relacionado a classificação.
+Após o treino dos modelos ambos passaram pelo hiper parâmetros utilizando o GridSearchCV.
+
+## 4 - Avaliação da performance do modelo
+
+
 
 ## 5 - Execução do Projeto - Entrega
 
