@@ -4,7 +4,7 @@
 
 Necessário uso do Docker
 
-## Para iniciar execute os comandos abaixo
+## Para iniciar acesse a pasta do projeto execute os comandos abaixo
 
 ```
   docker-compose build
@@ -14,7 +14,7 @@ Necessário uso do Docker
   docker-compose up
 ```
 
-Acesse o [LINK](http://127.0.0.1:8888/lab?token=easy) para acesso a interface do Jupyter Notebook .
+Acesse o [LINK](http://127.0.0.1:8888/lab?token=easy) para acesso a interface do Jupyter Notbook.
 
 
 ## Para execução do modelo
