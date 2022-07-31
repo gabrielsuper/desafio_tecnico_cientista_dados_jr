@@ -74,6 +74,8 @@ Outra métrica utilizada foi o AUC, para cálcular a qualidade das especificaç�
 
 Ao testar os modelos obtivemos uma acurácia de **0.6571** e AUC ROC de **0.6594** para o XGBoost, acurácia de **0.6071** para a Regressão Logística e AUC ROC de **0.6142** antes da tratativa dos outlier. Após a remoção dos outliers obtivemos uma acurácia de **0.6549** para o XGBoost e AUC ROC de **0.6307**, acurácia de **0.5752** para a Regressão Logística e AUC ROC de **0.5365**.
 
+Comparando os dois modelos concluo que o XGBoost oferece melhor performance. Visto que sua acurácia e seu AUC ROC atingiram melhores resultados. Como ação continuaria ajustando seus parâmetros para atingir um auto desempenho nas suas métricas de avaliação.
+
 ## 5 - Execução do Projeto - Entrega
 
 Nas etapas seguintes há um passo a passo para executar o arquivo do Jupyter Notebook em um container Docker. Essa foi uma das sugestões de como criar um ambiente para execução.
